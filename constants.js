@@ -1,13 +1,8 @@
 export const templates = [
     {
     name: "vue-cli-template",
-    value: "https://gitee.com/enteral/vue-template",
+    value: "kbws13/vue-template",
     desc:"基于vue-cli自定义vue3项目模板"
-  },
-  {
-    name: "vite-template",
-    value: "kbws/vite-template",
-    desc:"基于vite的vue3 + 前端工具链项目模板"
   },
 ]
 

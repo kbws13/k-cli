@@ -13,14 +13,14 @@ const pkg = fs.readJSONSync(new URL("./package.json", import.meta.url));
 program.version(pkg.version, "-v", "--version");
 
 program
-    .name("k-cli")
+    .name("k-command")
     .description("一个简单的脚手架工具")
     .usage("<command> [options]")
     .on("--help", () => {
         console.log(
             "\r\n" +
             chalk.greenBright.bold(
-                figlet.textSync("k-cli", {
+                figlet.textSync("k-command", {
                     font: "Standard",
                     horizontalLayout: "default",
                     verticalLayout: "default",
@@ -32,7 +32,7 @@ program
 
         console.log(
             `\r\nRun ${chalk.cyan(
-                `k-cli <command> --help`
+                `k-command <command> --help`
             )} for detailed usage of given command\r\n`
         );
     });

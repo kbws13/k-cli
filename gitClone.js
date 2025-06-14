@@ -15,7 +15,7 @@ const clone = (remote, name, options=false) => {
 
             spinner.succeed(chalk.green("拉取成功"))
             resolve()
-        })
+        }, {clone: true})
     }) 
 }
 
